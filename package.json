@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "kordoc": "^2.5.2",
+    "korean-law-mcp": "^3.5.4"
+  }
+}

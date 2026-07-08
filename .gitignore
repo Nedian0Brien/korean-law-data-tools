@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+node_modules/
+data/
+output/
+src/scraper/.law_scraper_settings.json
+*.pyc
+*.log
