@@ -48,7 +48,16 @@ python src/scraper/LawScraper.py --mode target --oc-id "$LAW_OPEN_API_OC"
 
 ```bash
 pytest tests/test_law_scraper_update_mode.py -q
+pytest tests/test_public_api.py -q
 python -m py_compile src/scraper/LawScraper.py
+```
+
+## Python API
+
+```python
+from korean_law_data_tools import LawScraper
+
+scraper = LawScraper(oc_id="your-open-api-key")
 ```
 
 ## 데이터 정책
