@@ -14,6 +14,8 @@
 ## 구조
 
 ```text
+korean_law_data_tools/
+└── cli.py
 src/scraper/
 ├── LawScraper.py
 └── kordoc_parse.mjs
@@ -41,7 +43,7 @@ cp .env.example .env
 ## 실행
 
 ```bash
-python src/scraper/LawScraper.py --mode target --oc-id "$LAW_OPEN_API_OC"
+python -m korean_law_data_tools.cli --mode target --oc-id "$LAW_OPEN_API_OC"
 ```
 
 ## 검증
@@ -49,7 +51,7 @@ python src/scraper/LawScraper.py --mode target --oc-id "$LAW_OPEN_API_OC"
 ```bash
 pytest tests/test_law_scraper_update_mode.py -q
 pytest tests/test_public_api.py -q
-python -m py_compile src/scraper/LawScraper.py
+python -m py_compile korean_law_data_tools/cli.py src/scraper/LawScraper.py
 ```
 
 ## Python API

@@ -20,6 +20,9 @@ test = [
   "pytest",
 ]
 
+[project.scripts]
+korean-law-data-tools = "korean_law_data_tools.cli:cli"
+
 [tool.setuptools]
 packages = ["korean_law_data_tools", "src", "src.scraper"]
 
